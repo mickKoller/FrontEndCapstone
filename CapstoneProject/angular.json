@@ -25,7 +25,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -57,7 +60,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CapstoneProject:build"
+            "browserTarget": "CapstoneProject:build",
+            //rubric 13
+            "port": 8080
+
           },
           "configurations": {
             "production": {
@@ -101,7 +107,7 @@
           }
         }
       }
-    },
+      },
     "CapstoneProject-e2e": {
       "root": "e2e/",
       "projectType": "application",
@@ -131,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "CapstoneProject"
+  
 }
