@@ -1,0 +1,16 @@
+
+a.hover{
+  text-decoration:none;
+  color:white;
+}
+
+#HeaderFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header-styling {
+  box-shadow: 1px 1px 6px #ccc;
+
+}

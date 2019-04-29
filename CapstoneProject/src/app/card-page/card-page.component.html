@@ -1,0 +1,55 @@
+<div class="container-fluid pt-5 min-size" style="min-height: 81.4vh">
+  <div class="row">
+    <div class="col-4 margin-left ">
+      <div class="remove">
+        <!-- rubric 47 -->
+        <img src="{{jsonData[0].subcategories[0].items[2].imagelink}}" width="120" height="120" />
+
+        <div>name: {{jsonData[0].subcategories[0].items[2].name}}</div>
+
+        <div>price: {{jsonData[0].subcategories[0].items[2].price}} $</div>
+        <div>quantity:<input class="ml-3" /></div>
+
+        <button>remove</button>
+      </div>
+      <div class="remove2">
+        <img src="{{jsonData[0].subcategories[1].items[0].imagelink}}" class="mt-4" width="120" height="120" />
+
+        <div>name: {{jsonData[0].subcategories[1].items[0].name}}</div>
+
+        <div>price: {{jsonData[0].subcategories[1].items[0].price}} $</div>
+        <div>quantity:<input class="ml-3" /></div>
+
+        <button>remove</button>
+
+      </div>
+     
+      <hr />
+      <div class="mb-4 remove">total cost: 13$</div>
+      <div class="mb-4 remove current-price d-none">total cost: 5</div>
+    </div>
+    <div class="col-4 margin-top">
+      <h4>card summary:</h4>
+      <div>subtotal: 13€</div>
+      <div class="mb-5">shipping: 9,99$</div>
+      <!-- rubric 48 -->
+      <button class="mb-3 toggle-shipping-tricker">click to enter shipping details</button>
+      <div class="toggle-shipping-details d-none">
+        <input placeholder="user name" />
+        <input placeholder="address" class="ml-2" />
+        <input placeholder="city" />
+        <input placeholder="phone number" class="ml-2" />
+      </div>
+      <div class="mt-3">tax: 19.4% | 4,46$</div>
+      <div>total: 27,41$ </div>
+      <!-- rubric 49 -->
+      <div class="d-none current-price">subtotal: 5$</div>
+      <div class="d-none current-price">shipping: 9,99$</div>
+      <div class="d-none current-price">tax: 19.4% | 2,908$</div>
+      <div class="d-none current-price">total: 17,89$ </div>
+      <!-- rubric 50 -->
+      <button class="mt-2">check out</button>
+    </div>
+   
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container-fluid min-size">
+  <div class="row ml-5 mt-4 ">
+
+    <!-- rubric19 -->
+      <!-- rubric14 -->
+    <div class="col-4 col-md-2 border-right mt-2">
+
+      <!-- rubric16 -->
+      <div class="mt-3" *ngFor="let category of categories | async">
+
+        <!-- rubric15 -->
+        <div class="household-wrapper pointer"> {{ category.category }}</div>
+        <div class="mt-3 ml-4 houshold-nav-item pointer" *ngFor="let subcategory of category.subcategories">
+          {{ subcategory.name }}
+        </div>
+      </div>
+
+      <!-- rubric17 -->
+      <input type="checkbox" class="mt-5">In stock only
+      <div class="dropdown mt-5">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort by
+        </button>
+
+        <!-- rubric18 -->
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item">None</a>
+          <a class="dropdown-item">Price</a>
+          <a class="dropdown-item">Aplphabethical</a>
+          <a class="dropdown-item">Rating</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- rubric 20 -->
+    <div class="col p-2" *ngFor="let cat of jsonData">
+      <div *ngFor="let sub of cat.subcategories">
+        <div *ngFor="let it of sub.items" class="p-5">
+          <!-- rubric 31 -->
+          <!-- rubric 32 -->
+          <a routerLink="/product-page/{{it.name}}">
+            <!-- rubric 23 -->
+            <img id="target" src="{{it.imagelink}}" height="120" width="120"/><div class="ml-2">
+              <!-- rubric 21 -->
+              {{it.name}}
+              <!-- rubric 22 -->
+              {{it.price}}€
+            </div>
+          </a>
+          <!-- rubric 23 -->
+          <button>add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

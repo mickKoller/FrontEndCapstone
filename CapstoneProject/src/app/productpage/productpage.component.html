@@ -1,0 +1,51 @@
+<div class="container min-size">
+  <div class="row mt-4">
+    <div class="col-10 offset-4 mt-5 pt-5">
+      <div>
+        <!-- rubric 36 -->
+        <img src="{{jsonData[0].subcategories[0].items[0].imagelink}}" width="150" height="150" />
+        <div>
+          <!-- rubric 35 -->
+          name: <span class="ml-5">{{jsonData[0].subcategories[0].items[0]["name"]}}</span>
+        </div>
+
+        <div>
+          <!-- rubric 40-->
+          description: <span class="ml-2">{{jsonData[0].subcategories[0].items[0]["description"]}}</span>
+        </div>
+
+        <div>
+          <!-- rubric 39 -->
+          price: <span class="pl-3">{{jsonData[0].subcategories[0].items[0]["price"]}}$</span>
+        </div>
+        <div>
+          category:   <span class="pl-3">{{jsonData[0].subcategories[0].items[0]["category"]}}</span>
+        </div>
+        <div>
+          subcategory:
+          <span class="pl-3">{{jsonData[0].subcategories[0].items[0]["subcategory"]}}</span>
+        </div>
+        <div>
+          <!-- rubric 38 -->
+          in stock:
+          <span class="pl-3">{{jsonData[0].subcategories[0].items[0]["stock"]}}</span>
+        </div>
+        <div>
+          <!-- rubric 37 -->
+          rating:
+          <span class="ml-5">{{jsonData[0].subcategories[0].items[0]["rating"]}}/5</span>
+        </div>
+        <!-- rubric 42 -->
+        quantity: <input />
+        <!-- rubric 41 -->
+        <button class="ml-2">add to card</button>
+        <!-- rubric 43 -->
+        <button><a routerLink="/#/shopping" class="text-decoration-none">back</a></button>
+
+
+
+
+      </div>
+    </div>
+  </div>
+  </div>
